@@ -1,0 +1,135 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum Cocoa Touch SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://open.movilforum.com"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>class SMS20</h3>
+
+		<b>class SMS20 : public NSObject</b><br>
+		<font size=-2>
+			&nbsp;&nbsp;&nbsp;&nbsp;<b>Source file(s): </b><a href="../../Classes/SMS20.m">SMS20.m</a>; <a href="../../Classes/SMS20.h">SMS20.h</a>
+		</font><br><br>
+
+		This class provides access to the SMS2.0 service that allows us to send instant messages to our contacts through an HTTP interface.<br><br>
+
+		SMS 2.0 service gives you the capability to detect presence status of your contacts. You can chat with them via SMS messages when they are offline. If any of your contact is online, he will receive your messages instantly, as with other IMS services (MSN, Yahoo, etc.).<br><br>
+		This API allows you to perform the following operations:<br><br>
+		<ul>
+			<li>Log into the SMS2.0 service. You will only need your telephone number and password.
+			<li>Retrieve your contact list.
+			<li>Get presence status for your contacts.
+			<li>Add contacts to your contact list. You will only need your contact's telephone number.
+			<li>Poll for notifications from the service. These notifications can be:
+			<ul>
+				<li>Change in presence status for any of your contacts.
+				<li>New message received.
+				<li>Request from another user to add you to his/her contact list. You must respond to this notification allowing (or not) the other user to add you you.
+			</ul>
+			<li>Remove a contact from your list..
+			<li>Log out from the service.
+		</ul>
+		<br>
+		You can check billing information <a href="/sdk/CocoaTouchSDKr11/Docs/http://www.movistar.es/fwk/cda/controller/page/0,2190,8887_42768051_1737793_0_0,00.html#tarifas">here</a><br><br>
+        		<b>Methods</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><a href="SMS20API_Login.html">Login</a></td>
+				<td>Performs login to movistar web site</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20API_Connect.html">Connect</a></td>
+				<td>Connects to SMS2.0 service</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20API_Polling.html">Polling</a></td>
+				<td>Performs polling to search for new message notifications, contacts online, etc...</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20API_AddContact.html">AddContact</a></td>
+				<td>Adds a contact to the user's contact list</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20API_AuthorizeContact.html">AuthorizeContact</a></td>
+				<td>Authorizes a contact to be informed about our presence status</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20API_DeleteContact.html">DeleteContact</a></td>
+				<td>Deletes a contact</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20API_SendMessage.html">SendMessage</a></td>
+				<td>Sends a message to the destination contact</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20API_Disconnect.html">Disconnect</a></td>
+				<td>Disconnects from SMS2.0 service</td>
+			</tr>
+		</table>
+
+		<h3>class SMS20Helper</h3>
+
+		<b>class SMS20Helper : public NSObject</b><br><br>
+
+		The <b>SMS20Helper</b> class provides helper functions to parse SMS2.0 service responses.<br><br>
+		<b>Methods</b>
+		<table border=1 width=100%>
+            <tr>
+				<td><a href="SMS20Helper_PresenceAuthorize.html">PresenceAuth</a></td>
+				<td>Retrieves UserID for the contact that wants to know our presence status</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20Helper_PresenceNotification.html">PresenceNotification</a></td>
+				<td>Retrieves TransactionID for an incoming request</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20Helper_NewMessage.html">NewMessage</a></td>
+				<td>Retrieves sender and text of a received message</td>
+			</tr>
+		</table>
+
+		<h3>class SMS20Contact</h3>
+
+		<b>class SMS20Contact : public NSObject</b><br><br>
+
+		The <b>SMS20Contact</b> class encapsulates a contact of SMS2.0 service.<br><br>
+
+		<b>Members</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><a href="SMS20Contact_UserID.html">userID</a></td>
+				<td>UserID of the contact</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20Contact_Alias.html">alias</a></td>
+				<td>Alias of the contact</td>
+			</tr>
+			<tr>
+				<td><a href="SMS20Contact_Presence.html">presence</a></td>
+				<td>Presence status of the contact</td>
+			</tr>
+		</table>
+
+		<br>
+		<h3>Sample Code</h3>
+		<table border=1 width=100%>
+			<tr>
+				<td><a href="../Samples/SMS20APISample.html">SMS 2.0</a></td>
+				<td>Sample code to show how to use SMS2.0 service</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

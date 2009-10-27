@@ -1,0 +1,49 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum Cocoa Touch SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://open.movilforum.com"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>SMS20Helper PresenceNotification</h3>
+
+		Retrieves contacts presence status from received XML<br><br>
+
+		<font face="Courier New">(NSDictionary*) PresenceNotification: (NSString*) data;</font><br><br>
+
+		<b>Parameters</b><br>
+		<i>data</i><br>
+		&nbsp;&nbsp;XML text received<br><br>
+
+		<b>Return</b><br>
+		List with contacts and their presence status indexed by UserId.<br><br>
+ Each element in the list is a <i>SMS20Contact*</i>.<br><br>
+
+		Below you can see a sample code to traverse the list:
+
+		<pre>
+    NSDictionary *contactos;
+    if ([contactos count] != 0) {
+        id key;
+        NSEnumerator * numerator = [contactos keyEnumerator];
+        while (key = [numerator nextObject]) {
+            SMS20Contact *Contact;
+            Contact = [contactos objectForKey:key];
+            //Do whatever you need with Contact
+        }
+    }</pre>
+
+	</div>
+</div>
+</body>
+</html>

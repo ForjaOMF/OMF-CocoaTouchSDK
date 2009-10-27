@@ -1,0 +1,56 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum Cocoa Touch SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://open.movilforum.com"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>class Copiagenda</h3>
+
+<b>class Copiagenda : public NSObject</b><br>
+		<font size=-2>
+			&nbsp;&nbsp;&nbsp;&nbsp;<b>Source file(s): </b><a href="../../Classes/Copiagenda.m">Copiagenda.m</a>; <a href="../../Classes/Copiagenda.h">Copiagenda.h</a>
+		</font><br><br>
+
+		This class provides access to the Copiagenda service that allows us to retrieve our contact list through an HTTP interface.
+		To use this service you must send the SMS "Alta" to "222".<br><br>
+		This API allows us to perform the following operations:<br><br>
+
+		<ul>
+			<li>Retrieve our contacts stored in Copiagenda service. The contact list is received in CSV format that you can store and use later.</li>
+		</ul>
+
+		This API is available for all movistar subscribers in Spain.<br><br>
+
+		You will need a SIM card with 128Kb to be able to copy your SIM contacts.<br><br>
+
+		<b>Methods</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><a href="CopiagendaAPI_RetrieveContacts.html">RetrieveContacts</a></td>
+				<td>Performs contact list retrieval</td>
+			</tr>
+		</table>
+
+		<br>
+		<b>Sample Code</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><a href="../Samples/CopiagendaSample.html">Copiagenda</a></td>
+				<td>Sample code to show how to use Copiagenda API</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

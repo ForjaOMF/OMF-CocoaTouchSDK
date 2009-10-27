@@ -1,0 +1,68 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum Cocoa Touch SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://open.movilforum.com"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>class Localizame</h3>
+
+		<b>class Localizame : public NSObject</b><br>
+		<font size=-2>
+			&nbsp;&nbsp;&nbsp;&nbsp;<b>Source file(s): </b><a href="../../Classes/Localizame.m">Localizame.m</a>; <a href="../../Classes/Localizame.h">Localizame.h</a>
+		</font><br><br>
+
+		This class provides access to the Local&iacute;zame service that allows us to locate our friends through an HTTP interface.<br><br>
+
+		Location comes as a descriptive text indicating the rough position of the user (street, town and postal code). Error margin can vary from 200 meters in a city to 5/20 km in the countryside.<br><br>
+
+		To use this service you must send "CLAVE" in an SMS message to number 424. You will receive another SMS message with the password that will allow you to use the service during the following 30 minutes.<br><br>
+
+		This API is available for all movistar subscribers in Spain.<br><br>
+
+		<b>Methods</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><a href="LocalizameAPI_Login.html">Login</a></td>
+				<td>Performs login to the server</td>
+			</tr>
+			<tr>
+				<td><a href="LocalizameAPI_Locate.html">Locate</a></td>
+				<td>Performs location search of a user</td>
+			</tr>
+			<tr>
+				<td><a href="LocalizameAPI_Authorize.html">Authorize</a></td>
+				<td>Authorizes another user to locate us</td>
+			</tr>
+			<tr>
+				<td><a href="LocalizameAPI_Unauthorize.html">Unauthorize</a></td>
+				<td>Unauthorizes another user to locate us</td>
+			</tr>
+			<tr>
+				<td><a href="LocalizameAPI_Logout.html">Logout</a></td>
+				<td>Logs out from server</td>
+			</tr>
+		</table>
+
+		<br>
+		<b>Sample Code</b>
+		<table border=1 width=100%>
+			<tr>
+				<td><a href="../Samples/LocalizameSample.html">Local&iacute;zame</a></td>
+				<td>Sample code to show how to use Localizame API</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

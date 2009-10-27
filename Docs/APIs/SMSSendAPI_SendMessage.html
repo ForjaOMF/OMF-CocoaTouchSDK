@@ -1,0 +1,49 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum Cocoa SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://open.movilforum.com"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>SMSSender SendMessage</h3>
+
+Sends an SMS message<br><br>
+
+<font face="Courier New">(NSString*) SendMessage: (NSString*) user password: (NSString*) pass destination: (NSString*) number message:(NSString*) text;</font><br><br>
+
+<b>Parameters</b><br>
+<i>user</i><br>
+&nbsp;&nbsp;String with sender's telephone number<br><br>
+<i>pass</i><br>
+&nbsp;&nbsp;String with sender's password<br><br>
+<i>number</i><br>
+&nbsp;&nbsp;String with destination telephone number<br><br>
+<i>text</i><br>
+&nbsp;&nbsp;String with message text<br><br>
+
+<b>Return</b><br>
+		If the message is correctly sent, OK<br><br>
+		else
+		<ul>
+			<li>1 - Incorrect user</li>
+<li>4 - Service unavaliable</li>
+<li>5 - Incorrect password</li>
+<li>11 - Incorrect destination</li>
+<li>13 - Destinatation not specified</li>
+<li>14 - Destinatation not legible</li>
+<li>15 - Message not specified</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

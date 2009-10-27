@@ -1,0 +1,38 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum Cocoa Touch SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://open.movilforum.com"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>Copiagenda RetrieveContacts</h3>
+
+Performs contact list retrieval<br><br>
+
+<font face="Courier New">(NSDictionary*) RetrieveContacts: (NSString*) login password: (NSString*) pass;</font><br><br>
+
+<b>Parameters</b><br>
+<i>login</i><br>
+&nbsp;&nbsp;String with user's telephone number<br><br>
+<i>pass</i><br>
+&nbsp;&nbsp;String with user's password<br><br>
+
+<b>Return</b><br>
+Contact list stored for the user. The list is indexed by contact name.
+		Each element in the list is a <i>NSStringArray*</i>. Name and telephone number of the contact will be stored in position 3 and 11 of the array respectively.<br><br>
+
+		
+	</div>
+</div>
+</body>
+</html>
